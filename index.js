@@ -16,6 +16,10 @@ _.each(repoMap, d=>{
     shell.exec(`git clone ${d.up} ${path}`)
   }
 
+  if(d.branch){
+    shell.exec(`git checkout ${d.branch}`)
+  }
+
   shell.exec(`cd ${path} && git pull`)
 
   shell.exec(`cd ${path} && git remote add fork ${d.fork} `)
