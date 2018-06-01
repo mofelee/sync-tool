@@ -1,0 +1,12 @@
+{
+  "name": "sync-tool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mofelee/sync-tool.git",
+  "author": "MofeLee <mofe@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "shelljs": "^0.8.2"
+  }
+}
