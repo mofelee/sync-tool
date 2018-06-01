@@ -20,7 +20,7 @@ _.each(repoMap, d=>{
 
   shell.exec(`cd ${path} && git remote add fork ${d.fork} `)
 
-  shell.exec(`cd ${path} && git push -u fork master`)
+  shell.exec(`cd ${path} && git push fork ${d.branch? d.branch+':': ''}master`)
 
   signale.success(d.name);
 });
